@@ -1,0 +1,14 @@
+{
+    "require": {
+        "cboden/ratchet": "^0.4.1",
+        "php": ">=7.0",
+        "ext-mysqli": "*",
+        "voku/simple-mysqli": "8.*",
+        "voku/simple-active-record": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Meet\\": "src"
+        }
+    }
+}
