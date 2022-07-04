@@ -69,10 +69,18 @@ class ComposerStaticInitd97e814e5a57c869cdf706fba23083df
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
         ),
         'M' => 
         array (
             'Meet\\' => 5,
+        ),
+        'J' => 
+        array (
+            'Jose\\Component\\Signature\\Algorithm\\' => 35,
+            'Jose\\Component\\Signature\\' => 25,
+            'Jose\\Component\\KeyManagement\\' => 29,
+            'Jose\\Component\\Core\\' => 20,
         ),
         'H' => 
         array (
@@ -81,6 +89,16 @@ class ComposerStaticInitd97e814e5a57c869cdf706fba23083df
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
+        ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+            'FG\\' => 3,
+        ),
+        'B' => 
+        array (
+            'Brick\\Math\\' => 11,
+            'Base64Url\\' => 10,
         ),
         'A' => 
         array (
@@ -208,9 +226,29 @@ class ComposerStaticInitd97e814e5a57c869cdf706fba23083df
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
         'Meet\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Jose\\Component\\Signature\\Algorithm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/web-token/jwt-signature-algorithm-rsa',
+        ),
+        'Jose\\Component\\Signature\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/web-token/jwt-signature',
+        ),
+        'Jose\\Component\\KeyManagement\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/web-token/jwt-key-mgmt',
+        ),
+        'Jose\\Component\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/web-token/jwt-core',
         ),
         'Hashids\\' => 
         array (
@@ -219,6 +257,22 @@ class ComposerStaticInitd97e814e5a57c869cdf706fba23083df
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
+        'FG\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fgrosse/phpasn1/lib',
+        ),
+        'Brick\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
+        'Base64Url\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spomky-labs/base64url/src',
         ),
         'Arrayy\\' => 
         array (
