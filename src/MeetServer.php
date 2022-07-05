@@ -55,7 +55,7 @@ final class MeetServer implements MessageComponentInterface
         $this->jwt = new JWT();
         
         $this->appID = 'vpaas-magic-cookie-e3d18e07c6b84703a43feca37bc14da3';
-        $this->kid = 'vpaas-magic-cookie-e3d18e07c6b84703a43feca37bc14da3/e07d3d';
+        $this->kid = 'vpaas-magic-cookie-e3d18e07c6b84703a43feca37bc14da3/04809e';
         
         $this->db = DB::getInstance('localhost', 'root', '', 'sala_virtual');
 
@@ -713,14 +713,14 @@ class JWT {
     private $USER_NAME="my user name";
     private $USER_IS_MODERATOR=false;
     private $USER_AVATAR_URL="";
-    private $USER_ID="b2c94a50-e53b-4afc-8bef-3132f3ec27dc";
+    private $USER_ID="";
     private $LIVESTREAMING_IS_ENABLED=false;
     private $RECORDING_IS_ENABLED=true;
     private $OUTBOUND_IS_ENABLED=false;
     private $TRANSCRIPTION_IS_ENABLED=false;
-    private $EXP_DELAY_SEC=7200;
+    private $EXP_DELAY_SEC=720000;
     private $NBF_DELAY_SEC=10;
-    private $ROOM='*';
+    private $ROOM='';
 
     private $jwk;
     private $algorithm;
@@ -754,7 +754,7 @@ class JWT {
             'aud' => 'jitsi',
             'exp' => time() + $this->EXP_DELAY_SEC,
             'nbf' => time() - $this->NBF_DELAY_SEC,
-            'room'=> '*',
+            'room'=> $this->ROOM,
             'sub' => $this->APP_ID,
             'context' => [
                 'user' => [
