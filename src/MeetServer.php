@@ -54,8 +54,8 @@ final class MeetServer implements MessageComponentInterface
 
         $this->jwt = new JWT();
         
-        $this->appID = 'vpaas-magic-cookie-e3d18e07c6b84703a43feca37bc14da3';
-        $this->kid = 'vpaas-magic-cookie-e3d18e07c6b84703a43feca37bc14da3/04809e';
+        $this->appID = 'vpaas-magic-cookie-20e063eed7544936be5350185c48ba4a';
+        $this->kid = 'vpaas-magic-cookie-20e063eed7544936be5350185c48ba4a/9a5927';
         
         $this->db = DB::getInstance('localhost', 'root', '', 'sala_virtual');
 
@@ -82,10 +82,6 @@ final class MeetServer implements MessageComponentInterface
     public function onMessage(ConnectionInterface $from, $msg): void
     {
 
-       
-            //$this->usersClients->attach($obj);
-
-            //echo "User ". $obj->nome . " conectado ";
             $obj = json_decode($msg);
 
             if($obj->cmd == "sair-sala-suporte"){
@@ -718,8 +714,8 @@ class JWT {
     private $RECORDING_IS_ENABLED=true;
     private $OUTBOUND_IS_ENABLED=false;
     private $TRANSCRIPTION_IS_ENABLED=false;
-    private $EXP_DELAY_SEC=720000;
-    private $NBF_DELAY_SEC=10;
+    private $EXP_DELAY_SEC=72000;
+    private $NBF_DELAY_SEC=100;
     private $ROOM='';
 
     private $jwk;
